@@ -1,0 +1,5 @@
+PROJECT NAME,Tech Open Air 2012
+DATE,2012
+STATUS,0
+WITH,Daniel Westerlund,de.linkedin.com/in/danielwesterlund
+WHAT,Product Definition,UX Design,Interface Design,Front-end development

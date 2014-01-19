@@ -1,0 +1,4 @@
+PROJECT NAME,Tech Open Air 2013
+DATE,2013
+STATUS,1
+WHAT,UX Management,Product Definition,Interface design,Front End Development,Signage

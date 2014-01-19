@@ -1,0 +1,5 @@
+PROJECT NAME, Universal Remote
+DATE,  2008
+STATUS, 0
+WITH, Loïc Geslin, http://de.linkedin.com/pub/loïc-geslin/8/23/52
+WHAT, Need Analysis, Research, Interface Design, User Experience

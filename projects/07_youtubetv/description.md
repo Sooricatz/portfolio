@@ -1,0 +1,1 @@
+Unofficial Youtube TV application based on the <a href="/projects/07_snowflake/">NDS Snowflake UI navigation concept</a>. Produced for the <a href="/projects/06_zon/">Zon Iris Cable box</a>, this app allow the user to search and browse videos directly from youtube.

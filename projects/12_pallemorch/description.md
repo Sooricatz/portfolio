@@ -1,0 +1,1 @@
+Web application for the Danish Power and Water company, Palle Mørch. The platform allows the user to have a real-time overview of its different consumption and to compare it with the previous years as well as with its neighborhood and learn from it. It also give the users some advices, based on its consumption habits, in order to reduce its environmental impact and costs.

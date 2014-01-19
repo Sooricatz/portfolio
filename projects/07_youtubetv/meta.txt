@@ -1,0 +1,7 @@
+PROJECT NAME, Youtube TV
+DATE,  2011
+STATUS, 1
+WITH, Olivier Lacour, http://www.linkedin.com/profile/view?id=3909397&locale=en_US&trk=tyah, VP Design
+WITH, Bérangère Lallemant, http://www.linkedin.com/pub/b%C3%A9rang%C3%A8re-lallemant/42/28/350, Creative Direction
+WITH, Caroline Sauvage, http://carolinesauvage.com/, Art Direct
+WHAT,UX Management,Product Definition,Interface Design

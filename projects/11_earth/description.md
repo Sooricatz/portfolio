@@ -1,0 +1,1 @@
+Screen designs for a multi-platform broadcasting solution. earthTV offers simultaneously from mass-audience TV Broadcasters, to targeted online and mobile platforms as well as Inflight Entertainment a selection of live, remote controlled webcam feeds from all over the world.
