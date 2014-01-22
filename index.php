@@ -2,6 +2,7 @@
     session_start();
     $path = $_SERVER['DOCUMENT_ROOT'];
     $baseaddress = 'http://' . $_SERVER['SERVER_NAME'];
+    $_SESSION['path'] = $path;
 ?>
 
 <?php include ($path . "/included/head.php"); ?>
