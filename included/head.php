@@ -30,7 +30,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/css/style.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script type="text/javascript" src="http://fast.fonts.net/jsapi/c67cbb23-5e21-4381-8fc3-e0d265e7f531.js"></script>
+    <!--<script type="text/javascript" src="http://fast.fonts.net/jsapi/c67cbb23-5e21-4381-8fc3-e0d265e7f531.js"></script>-->
     <script src="/js/script.js"></script>
 </head>
 
