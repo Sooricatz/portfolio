@@ -7,17 +7,12 @@
 
 <?php include ($path . "/included/head.php"); ?>
 
-<section class="hero-unit">
-    <div>
-    <h1>Guillaume Mutschler<span>UX Manager*</span></h1>
-    <p>*Product Design Management with a focus on building user-centered experiences</p>
-    <a href="#work" class="btn" id="more">↓ DISCOVER MORE ↓</a>
-    </div>
-</section>
+<div class="hero-unit right-container">
+    <span>Aloha!</span>
+    <p>I'm Guillaume, a french Design Engineer, who is specialised in digital interactions and products.
+    <p>At large! Not only talking graphical stuff here.</p>
+</div>
 
-<section id="work">
-    <header><h2>What I worked on</h2></header>
     <?php include ($path . "/included/project_list.php"); ?>
-</section>
 
 <?php include ($path . "/included/footer.php"); ?>

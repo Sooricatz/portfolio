@@ -1,5 +1,4 @@
 PROJECT NAME,Palle Mørch 
 DATE,2012
 STATUS,1
-WITH, IOLA, http://www.iola.dk/
 WHAT,Need Analysis,Product Definition,User Experience,Interface Design,Front-end development 

@@ -1,6 +1,4 @@
 PROJECT NAME, Vacum Cleaner
 DATE,  2007-2008
 STATUS, O
-WITH, Luc Fontbonne, http://fr.linkedin.com/pub/luc-fontbonne/21/478/251
-WITH, Roland Izard, http://fr.linkedin.com/in/rolandizard
 WHAT, Need Analysis, User Experience, Ergonomics
