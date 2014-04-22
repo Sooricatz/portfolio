@@ -5,7 +5,7 @@
     include ($path . "/included/head.php");
     include_once $path . '/included/project_meta.php';
     $metadatas = getprojectmeta($path.$_SERVER['REQUEST_URI']);
-    $bannerimg = "images/banner.png";
+    $bannerimg = "images/banner.jpg";
     $bannervid = "images/banner.txt";
     $descriptionfile = "description.md";
 ?>
