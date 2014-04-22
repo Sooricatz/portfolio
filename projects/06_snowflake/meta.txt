@@ -1,11 +1,4 @@
 PROJECT NAME, NDS Snowflake
 DATE,  2010-2011
 STATUS, 1
-WITH, Olivier Lacour, http://www.linkedin.com/profile/view?id=3909397&locale=en_US&trk=tyah, VP Design
-WITH, Caroline Terrasse, fr.linkedin.com/pub/caroline-terrasse/1/41b/888, Programm Management
-WITH, Bérangère Lallemant, http://www.linkedin.com/pub/b%C3%A9rang%C3%A8re-lallemant/42/28/350, Creative Direction
-WITH, Thorsten Buch, http://thorstenbuch.de/, Creative Direction
-WITH, Michèle Wang, http://marz-chew.fr/, Art Direction
-WITH, Jérémie Baboukhian, http://marz-chew.fr/, Art Direction
-WITH, François Chay, http://www.francoischay.eu/, Art Direction
 WHAT,Product Management,Interface Design,UX Design, Branding

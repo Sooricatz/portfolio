@@ -1,145 +1,154 @@
 /* RESET CSS
 -----------------------------------------------------------------------------------*/
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{font-size:100%; border: none;}legend{color:#000}input:active, input:focus {outline: none}::-moz-selection{background: #993525; color: #ffffff;}::selection{background: #993525; color: #ffffff;}* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } a{ color: #00305C; text-decoration: none;}.clear{clear:both;font-size:1px;line-height:0;}
+html,div,ul,ol,li,h1,h2,h3,h4{margin:0;padding:0}img{border:0}ol,ul{list-style:none}h1,h2,h3,h4{font-size:100%;font-weight:bold}* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } a{color: #000; text-decoration: none;}.clear{clear:both;font-size:1px;line-height:0;}
+
+
+/* OPTIMIZE TEXT-RENDERING
+-----------------------------------------------------------------------------------*/
+h1, h2, h3, #title, #contact p, .hero-unit span {text-rendering: geometricPrecision;}
+
 
 /* Structure Général
 -----------------------------------------------------------------------------------*/
-html {font-family: 'Didot$ LP W01 Display', serif; font-size: 17px; background: #fff; border-left: 10px solid #000; border-right: 10px solid #000; }
-#site{margin: 0 auto; width: 80%; max-width: 1020px; padding-bottom: 9em; padding-top: 7em;}
+body {padding: 2.4em; margin:0; color: #000;font-size: 14px; background: #fff; font-family: "Trebuchet MS", Arial, sans-serif;}
+html.inactive, html.inactive body {overflow: hidden;}
+#site {width: 100%; min-width: 60.2em; height: 100%;}
+
+#main {margin: 0 auto; padding-top: 10.6em; max-width: 61em; padding-left: 3.6em; }
+
 
 /* Mise en forme General
 -----------------------------------------------------------------------------------*/
 ul, ol { list-style: none; padding: 0; margin: 0; }
 
-h1 {font-size: 2.4em; line-height: 1.2em; margin-top: 0.2em;}
-h2 {font-family: 'Univers LT W01 65 Bold', sans-serif; font-size: 0.7em; text-transform:uppercase; margin-top: 1.4em; margin-bottom: 0; line-height: 0.7em;}
-h3 {line-height:0.8em; border-bottom: 1px solid #9A9A9A; padding-bottom: 0.48em; margin-bottom: 0.8em; font-size: 0.8em; text-transform:uppercase; }
-p {margin-bottom: 0.4em; margin-top: 0.2em; line-height: 1.6em; font-size: 1.1em; color: #313131;}
-sup {vertical-align: text-top; font-size: 65%;}
+h1, h2, h3, #title {font-family: Futura, "Trebuchet MS", Arial, sans-serif;}
+h1 {margin: 1em 0; color: #000; font-size: 4.8em; letter-spacing: -0.02em;}
+h2 {margin-bottom: 0; margin-top: 1em; text-transform: uppercase; color: #04BD93; font-size: 1.2em; font-weight: bold;}
+h3 {font-size: 1.2em; color: #000; margin-top: 0.4em; margin-bottom: 0; font-weight: normal; font-weight: bold;}
 
-p a {text-decoration:underline;} p a:hover {text-decoration: none;}
+p {margin-bottom: 0.6em; margin-top: 0.4em; line-height: 1.4em;}
+p a {text-decoration: underline;}
+a:hover {text-decoration: underline;}
 
-a.btn {border: 4px solid #fff; text-transform: uppercase; font-family: 'Univers LT W01 65 Bold'; padding: 8px 10px 4px 10px; color: #fff; font-size: 0.7em; margin: 2.6em 0; display: inline-block;  -webkit-transition: 260ms ease-out; transition: 260ms ease-out;} a.btn:hover {background:#fff; color:#00305C;  -webkit-transition: 60ms linear; transition: 60ms linear;}
-
-/* about
------------------------------------------------------------------------------------*/
-#about-box {position: fixed; width: 100%; top: 0; left: 0;  z-index:1000; border-top: 10px solid #000;}
-#about-box-content {background: #fff; overflow: hidden; display:none; } #about-box-content .container {width: 80%; max-width: 720px; margin: 0 auto; padding: 25px 0;}
-#about-toggle {font-size: 1.2em; text-align: center; line-height:1em; width: 260px; margin: 0 auto; background:#000; color: #fff;}#about-toggle:hover {cursor: pointer;}
-#about-toggle li{ padding: 0.4em 1.2em;; display: inline-block; -webkit-transition: 260ms ease-out; transition: 260ms ease-out; } #about-toggle:hover li {-webkit-filter: blur(2px); filter: blur(2px); filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2'); -webkit-transition: 60ms linear; transition: 60ms linear;}
 
 /* header
 -----------------------------------------------------------------------------------*/
-header[role=banner] nav #nav-toggle { border-left: 1px solid #dedede; width: 3.1em; height: 2.6em; position: absolute; top: 0.3em; right: 0;}
+#header {margin: 0; position: fixed; top: 2.4em; left: 2.4em; z-index: 10000;}
+#title {display: inline-block; ; margin-right: 6em;}
+#title a {display: block; width: 10em; font-size: 2em; line-height: 1.1em; font-weight: bold; height: 4em; color: #000;}
+#title a:hover {text-decoration: none;}
+#title a:hover span {
+  animation: blink 1.2s ease-in-out infinite;
+  -moz-animation: blink 1.2s ease-in-out infinite;
+  -webkit-animation: blink 1.2s ease-in-out infinite;
+}
+@keyframes blink {
+	0% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-webkit-keyframes blink {
+	0% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+}
 
-header[role=banner] nav #nav-toggle span { -webkit-transition: 260ms ease-out; transition: 260ms ease-out; background: url('../images/sprite.png'); width: 100%; height: 100%; display:block;}
-[role=banner] nav #nav-toggle:hover span{cursor: pointer; -webkit-filter: blur(2px); filter: blur(2px); filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2'); -webkit-transition: 60ms linear; transition: 60ms linear;}
+#menu {display: inline-block;}
+#menu li {display: inline-block; list-style-type: none; margin-right: 3em; margin-top: 1em;}
+#menu li:before, #menu li::before {content: ""; width: 2.6em; display: block;border-top: 0.4em solid #000; padding-bottom: 1.6em;}
+#menu li a {padding: 1.6em 1em 1em 0;}
 
-header[role=banner] nav a h1 {text-transform: uppercase; font-size: 1.05em; border-bottom: none; line-height:1em; float: left; margin: -0.8em 2.2em -0.5em -0.8em; padding: 0.8em 0.8em 0.5em 0.8em;}
+.hero-unit { border-top: 1px solid #E2E2E2; border-bottom: 1px solid #E2E2E2; padding-top: 7.2em; margin-top: 2.1em; margin-right: -7.2em;}
+.hero-unit span {font-size: 0.9em; border-bottom: 0; margin-bottom: 0; text-transform: uppercase; color: #04BD93; font-weight: bold;}
+.hero-unit p {font-size: 1.9em; line-height: 1.2em; font-family: Futura, "Trebuchet MS", Arial, sans-serif; margin-top: 0; max-width: 32em; letter-spacing: -0.02em; font-weight: bold;}
 
-header[role=banner] nav {position: fixed; top: 30px; left: 30px; padding: 0.8em 0.8em 0.4em 0.8em; background: #fff; z-index:999; font-size: 1.2em;}
-header[role=banner] nav #nav-content {display: none;}
-header[role=banner] nav ul {margin: 0.8em 0 0.4em 0;}
-header[role=banner] nav li {border-bottom: 1px solid #ccc;}
-header[role=banner] nav li a { display: inline-block; font-family: 'Univers LT W01 65 Bold'; text-transform: uppercase; font-size: 0.5em; width: 100%; height: 100%; color: #000;} header[role=banner] nav li a:hover {color: #00305C;}
 
-/*Front page specific
+/* About
 -----------------------------------------------------------------------------------*/
-body.home #site {padding-top: 0;}
-
-.hero-unit {font-size: 1.4em; max-width: 720px; text-align: center; margin-left: auto; margin-right: auto; height: 100%; display: table;}.hero-unit div {display:table-cell; height: 100%; vertical-align:middle;}
-.hero-unit h1 {text-transform: uppercase; color: #fff; line-height: 0.6em; margin-bottom: 0.4em} .hero-unit h1 span {display: block; font-family: 'New Standard W01 Italic'; font-size: 0.9em; text-transform: lowercase; line-height:0.9em;}
-.hero-unit p {color: #fff; font-family: 'Univers LT W01 45 Light', sans-serif; text-transform: uppercase; font-size: 0.6em; line-height: 1.2em;}
-
-body.home #work h2 {color: #fff; font-family: 'Didot$ LP W01 Display', serif; line-height:0.8em; border-bottom: 1px solid #fff; padding-bottom: 0.1em; font-size: 1.9em; text-transform:uppercase; }
-
-.project-list {margin: 0.6em 0;} 
-a.project-list-item {width: 33.333%; padding-top: 20%; position: relative; float: left; display: block; overflow: hidden; height: 0;}
-a.project-list-item img {height:100%; position: absolute; top: 0; left: -20%; z-index:0; -webkit-transition: 360ms ease-out; transition: 360ms ease-out; -webkit-transform: scale(1); transform: scale(1);}
-a.project-list-item:hover img {-webkit-transition: 90ms linear; transition: 90ms linear; -webkit-transform: scale(1.1); transform: scale(1.1); -webkit-filter: blur(2px); filter: blur(2px); filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');}
-a.project-list-item .project-title {-webkit-font-smoothing: antialiased; -webkit-text-stroke: 0.5px #fff;; bottom: 0; padding: 0.9em 1.2em; text-align:center; width: 100%; position: absolute; left: 0; color: #fff; z-index: 10;}
-a.project-list-item .project-title h3 {border-bottom: none; line-height: 1em; font-size: 1.4em; margin:0; padding:0;}
-a.project-list-item .border {border: 1px solid #fff; position:absolute; top: 0.42em; left: 0.4em; right: 0.4em; bottom: 0.4em; }
-a.project-list-item .bg-overlay {position:absolute; top: 0;left: 0; right: 0; bottom: 0; background: url('../images/black-overlay.png');}
-
-/* Projects pages specific
------------------------------------------------------------------------------------*/
-.banner-img {text-align:center;} .banner-img img {max-height: 420px; max-width: 100%;}
-#project-description {font-size: 1.4em; line-height: 0.7em;}
-#project-description h1, #project-description .description-content {border-bottom: 1px solid #9A9A9A; margin-bottom: 0.1em;}
-#project-description iframe,.project-description img {margin: 0.2em auto 1.2em auto; display: block;}
-span.what {margin-right: 0.8em; font-family: 'Univers LT W01 65 Bold'; font-size: 0.5em; display: inline-block; color: #00305C; text-transform: uppercase; }
-
-#project-illustrations {margin: 4em -0.5em;}
-#project-illustrations img {width: 50%; padding: 0.4em 0.5em; display:block; float: left}#project-illustrations img.img2x {width: 100%;}
-
-.video-container {position: relative; padding-bottom: 56.28%;	padding-top: 30px; height: 0; overflow: hidden; margin: 0.4em 0.5em}
-.video-container iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-
+#about-box {opacity: 0; background: #04BD93; background: rgba(4, 189, 147,0.98); position: fixed; top: 100%; bottom: 0em; right: 0em; left: 0em; transition: opacity .4s ease, top 0s ease 1s; -webkit-transition: opacity .4s ease, top 0s ease 1s; z-index: 1001;padding: 0.8em;}
+#about-box.active {top: 0; opacity: 1; transition: opacity .6s ease-out, top 0s ease 0s; -webkit-transition: opacity .6s ease-out, top 0s ease 0s;}
+.active #about-box-content {margin-top: 12.8em;}
+#about-box-content {margin: 11.6em auto 3.8em auto; width: 33.2em; padding: 0 0.6em; transition: margin-top .6s ease-out; -webkit-transition: margin-top .6s ease-out;}
+.about-box-container {height: 100%; width: 100%; border: 0.6em solid rgb(255, 255, 255); overflow: scroll;}
+#about-box-content p, #about-box-content p a {color: #fff;}
+#about-box-content:after, #about-box-content::after {content: ""; width: 2.6em; display: block; font-size: 1.2em; border-bottom: 0.4em solid #000; padding-top: 0.4em;}
+.close a {font-size: 1.2em; font-weight: bold; padding: 0.6em 1.2em 0.6em 0; margin-bottom: 3.8em; display: inline-block;}
+.close a:before, .close a::before {content: ""; width: 2.6em; display: block; border-top: 0.4em solid #000; padding-bottom: 0.6em;}
 
 /* footer
 -----------------------------------------------------------------------------------*/
-section#contact { padding: 1.4em; background: #fff; margin-top: 6em;}
-#contact p {font-size: 1.8em; line-height: 1.36em;}
-a.contact-email { display: inline-block; 0.9em; color: #fff; background: #00305C; font-family: 'Univers LT W01 45 Light',serif; padding: 0.5em 0.8em; border: 4px solid #00305C;}
-a.contact-email:hover { color: #00305C; background: #fff;}
+#contact {margin: 8em auto 4em auto;} #contact:before, #contact::before {content: ""; width: 2.6em; display: block; border-top: 0.4em solid #000; padding-bottom: 1.6em;}
+#contact p {width: 17em; letter-spacing: 0.01em; font-size: 13px;}
+#contact h2 {color: #000; margin-bottom: 1em;}
+a.contact-email:before,a.contact-email::before  {content: "\2192 \0009";}
+#contact a.contact-email {font-size: 1.4em; margin-top: 1.6em; display: block;}
+#footer {font-size: 0.9em; margin-bottom: -0.8em;}
+#colophon {text-align: right;}
 
-footer {position: fixed; width: 100%; bottom: 0; left: 0; border-bottom: 10px solid #000; font-size:12px;  z-index:1000;}
-a.socialbtn { vertical-align: bottom; width: 57px; height:55px; display: inline-block; position: relative; background: #fff}
-a.socialbtn span {display:block; height: 100%; width: 100%; background: url("../images/sprite.png"); background-repeat: no-repeat;-webkit-transition: 260ms ease-out; transition: 260ms ease-out;}
-a.socialbtn:hover span {-webkit-filter: blur(2px); filter: blur(2px); filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');-webkit-transition: 60ms linear; transition: 60ms linear;}
-a.linkedinbtn span{background-position: 100% 0;}a.mailbtn span{background-position: 50% 0;}
 
-#colophon { vertical-align:middle; position: absolute; left: 25px; bottom: 8px;}
-#social-links {position: absolute; right: 25px; bottom: 8px;}
+/* project list
+-----------------------------------------------------------------------------------*/
+#project-list {margin: 6.4em -7.8em 0 -11.4em;}
+.project-list-item {display: block; position: relative; width: 32.666%; margin: 0.333%; overflow: hidden; float: left; line-height: 0; padding-top: 19.5%; -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);}
+.project-list-item img {position: absolute; top:0; left: -21%; height: 100%;}
+.project-list-item-title {display: inline-block; max-width: 60%; margin: 0 auto; background: #fff; background: rgba(255,255,255,0.95); padding: 0.6em; -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);}
+.project-list-item-title-inner {padding: 1.6em; border: 1px solid #525252;text-align: center; height: 100%; width: 100%; text-transform: uppercase; letter-spacing: -0.04em;}
+.project-list-item h3 {line-height: 1.1em;}
 
-@media screen and (max-width: 980px) {
-    #site {width: 94%; padding-bottom: 6em; padding-top: 7em; font-size: 15px;}
-    html, footer, #about-box {border-width: 11px;}
-    #about-box-content .container {width: 94%;}
+a.project-list-item:hover .project-list-item-title { background: #000; background: rgba(0,0,0,0.95); color: #F1F1F1 }
+a.project-list-item:hover .project-list-item-title-inner {border: 1px solid #D1D1D1;}
+a.project-list-item:hover h3 {color: #F1F1F1;}
+
+.title-container {position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
+.centering-table {display: table; width: 100%; height: 100%;}
+.centering-table-inner {display: table-cell; width: 100%; height: 100%; vertical-align: middle; text-align: center;}
+
+
+/* Projects pages specific
+-----------------------------------------------------------------------------------*/
+.back {margin-bottom: -5.3em;}
+.back a {padding: 0.5em 1em 0.5em 0; display: inline-block; font-size: 1.1em;}
+.banner-img {text-align:center;} .banner-img img {max-height: 420px; max-width: 90%;}
+#project-description {padding: 0.8em 0; border-bottom: 1px solid #E2E2E2; border-top: 1px solid #E2E2E2;}
+#project-description h2 {font-size: 0.9em; margin-bottom: 0; margin-top: 0;}
+#project-description p {font-size: 1.6em; font-family: Futura, "Trebuchet MS", Arial, sans-serif; margin-top: 0; max-width: 31em; margin-bottom: 0; letter-spacing: -0.02em;}
+#project-description iframe,.project-description img {margin: 0.2em auto 1.2em auto; display: block;}
+span.what {margin-right: 0.8em; font-size: 0.8em; display: inline-block; text-transform: uppercase; font-family: Times, "Times New Roman", serif;}
+
+#project-illustrations {margin: 4em -6.9em;}
+#project-illustrations .ill-container {width: 50%; padding: 0.4em 0.5em; float: left;}#project-illustrations .ill-container.img2x {width: 100%;}
+#project-illustrations img {-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); width: 100%; font-family: }
+
+.video-container {position: relative; padding-bottom: 56.28%;	padding-top: 30px; height: 0; overflow: hidden; -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);}
+.video-container iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+@media screen and (max-width: 74em) {
+	body{padding: 2.1em 2.1em 1.2em 2.1em;}
+	.topbar, .bottombar {height: 1.2em;}
+	#main{ padding-left: 0; width: 56em;}
+	.hero-unit {margin-right: -6.4em; padding-top: 4.8em;}
+	.hero-unit p {font-size: 1.6em;}
+	#project-list {margin: 4.8em -6.4em 0 -6.4em;}
+	#project-illustrations {margin: 3.6em -6.1em;}
+	.project-list-item-title {font-size: 0.9em;}
 }
 
-@media screen and (max-width: 780px) {
-    .hero-unit h1 {font-size: 2.4em; line-height:1em;}.hero-unit h1 span {font-size: 0.6em; line-height:0.6em; margin-top: -0.2em;}
-    .hero-unit a.btn { display: none;}
-    a.project-list-item {width: 50%; padding-top: 31%;}
-    #contact p {font-size: 1.4em;}
-    a.contact-email { border-width: 3px; font-size: 1em}
-    #project-illustrations {margin: 3em 0 0 0;}
-    #project-illustrations img {width: 100%; padding: 0.3em 0;}
-    .video-container {margin:0.3em 0;}
-    html, footer, #about-box {border-width: 6px;}
-    h3, p {font-size: 1em;}
-    h1 {font-size:1.8em}
-    span.what {font-size: 0.5em;}
-    header[role=banner] nav{ width: 94%; left: 3%; top: 2%; box-shadow: 0px 3px 10px -7px #646464;}
-    #about-toggle { display: none;}
-    body.home #about-toggle {display: block;}
-    body.home {background: url('../images/homebgsmall.jpg') center fixed no-repeat;background-size:cover;}
-    header[role=banner] nav #nav-toggle span {background-position: -5px -3px;}
-                                    
-}
+@media screen and (max-width: 63.6em) {
+	body {padding: 2.1em 0 1.2em 0;}
+	#header {left: 1.9em; top: 1.9em;}
+	.hero-unit {margin:4.6em 0;}
+	#project-list {margin:3.6em -1.6em;}
+	.project-list-item {width: 49%; margin: 0.5%; padding-top: 25%}
+	.project-list-item-title {top: 1em; bottom: 1em; left: 1em; right: 1em;}
+	#project-illustrations {margin: 2.8em -2.1em;}
+	#menu, .close {font-size: 0.9em;}
+	.close a {margin-bottom: 2.1em; margin-top: 1em;}
+	#menu li:before, #menu li::before {padding-bottom: 1.2em;}
+	#colophon {margin-right: 2.1em;}
+	#contact {margin:6.4em 0;}
+	h1 {font-size: 2.9em;}
+	.back {margin-bottom: -3.6em;margin-top: 1.4em}
 
-@media screen and (max-width: 640px) {
-    #site {width: 96%; padding-bottom: 0.9em;}
-    p {font-size: 0.9em; line-height: 1.48em;}
-    #social-links, #colophon {display: none;}                                       
-    a.project-list-item {width: 100%; padding-top: 36%; font-size: 1.1em; margin: 0.15em 0;}
-    a.project-list-item img {left: 0; width: 100%; height: auto; top: -10%; -webkit-filter: blur(2px); filter: blur(2px); filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');  transform: scale(1.1); -webkit-transform: scale(1.1); }
-}
-
-
-@media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
-  -ms-filter: none !important; } 
-  a, a:visited { color: #444 !important; text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; }
-  tr, img { page-break-inside: avoid; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3{ page-break-after: avoid; }
+@media screen and (max-width: 63.6em) {
+	#title a {font-size: 1.6em;}
 }

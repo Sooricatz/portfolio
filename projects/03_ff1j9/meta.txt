@@ -1,8 +1,4 @@
 PROJECT NAME,Festival du Film d'Un Jour 2009
 DATE,2009
 STATUS,1
-WITH, Gaetan Juillard
-WITH François Jouffroy, http://www.linkedin.com/in/francoisjouffroy
-WITH, Thomas Charbit, http://twitter.com/thomascharbit
-WITH, Laure Guicherd, http://www.linkedin.com/in/laureguicherd
 WHAT,Executive,Branding,Post-Production,Video Editing,DVD Authoring
