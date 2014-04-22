@@ -1,0 +1,3 @@
+Front End Development and User Experience Definition for the web presence of a mobile application that helps users remember and record their dreams.
+
+SHADOW begun as a successful Kickstarter Campaign and was eventually mentioned in <a href="http://www.discovershadow.com/press/" target="_blank">majors online tech-blogs</a> such as <a href="http://www.wired.com/2013/09/shadow-a-beautiful-app-that-helps-you-remember-your-dreams/" target="_blank">Wired</a> and <a href="http://mashable.com/2013/09/13/shadow-app-track-dreams/" target="_blank">Mashable</a>

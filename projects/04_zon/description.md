@@ -1,4 +1,3 @@
-First implementation from <a href="/projects/07_snowflake/">NDS Snowflake</a> for a portuguese cable operator. Zon Iris allows the user to access a large catalog from movies and shows and live event seamlessly on all its devices (TV, IOS, Android and webportal), at home or on the go. 
-Zon Iris was eventually awarded as the *Most Innovative Design or User Interface* at the TV Of Tomorrow Show 2011 as well as a *Janus du Service* delivered from the French Design Institute.
+First commercial implementation from the <a href="/projects/07_snowflake/">NDS Snowflake OS</a> for a portuguese cable operator.
 
-Finally, we defined the communication strategy of the product and the new branding from Zon. Giving us the opportunity to pursue our idea of an horizontal User Experience.
+Zon Iris was eventually awarded as the *Most Innovative Design or User Interface* at the TV Of Tomorrow Show 2011 as well as a *Janus du Service* delivered from the French Design Institute.

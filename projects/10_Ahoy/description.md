@@ -1,1 +1,1 @@
-Webdesign, webdevelopment and offline communication for the Berlin-Charlottenburg based Co-working space. Beside the showcase side, the website allows the co-workers to book a meeting-room, post classified ads and list their events.
+Webdesign, webdevelopment and offline communication for the Berlin-Charlottenburg based Co-working space.

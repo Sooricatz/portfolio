@@ -1,1 +1,1 @@
-Graphic Design for print and apparel material for the promotion of the ticketing platform, Eventbrite, in Berlin and Germany.
+Graphic Design from print and apparel material for a ticketing platform, Eventbrite, and their promotion on German market.
