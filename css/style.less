@@ -1,0 +1,222 @@
+
+@import "common";
+
+
+/* OPTIMIZE TEXT-RENDERING
+-----------------------------------------------------------------------------------*/
+h1, h2, h3, #title, #contact p, .hero-unit span {text-rendering: geometricPrecision;}
+
+
+/* Structure Général
+-----------------------------------------------------------------------------------*/
+body {padding: 2.4em; font-size: 14px;}
+#site {min-width: 60.2em;}
+#main {padding-top: 10.6em; max-width: 61em; padding-left: 3.6em; }
+
+
+/* Mise en forme General
+-----------------------------------------------------------------------------------*/
+h1 {margin: 1em 0; font-size: 4.8em;}
+h2 {margin-bottom: 0; margin-top: 1em; font-size: 1.2em;}
+h3 {font-size: 1.2em; color: #000; margin-top: 0.4em; margin-bottom: 0; font-weight: normal; font-weight: bold;}
+
+p {margin-bottom: 0.4em; margin-top: 0.4em; line-height: 1.4em;}
+a:hover {text-decoration: underline;}
+
+.back {
+	margin-bottom: -5.3em;
+
+	a {
+		padding: 0.5em 1em 0.5em 0;
+		display: inline-block;
+		font-size: 1.1em;
+	}
+}
+
+
+
+/* header
+-----------------------------------------------------------------------------------*/
+#header {
+	margin: 0;
+	position: fixed;
+	top: 2.4em;
+	left: 2.4em;
+	z-index: 10000;
+}
+#title {
+	display: inline-block;
+	margin-right: 3em;
+	font-size: 2em;
+
+	a:hover {
+		text-decoration: none;
+
+		span {
+			animation: blink 1.2s ease-in-out infinite;
+			-moz-animation: blink 1.2s ease-in-out infinite;
+			-webkit-animation: blink 1.2s ease-in-out infinite;
+		}
+
+		@keyframes blink {
+			0% {opacity: 1;}
+			50% {opacity: 0;}
+			100% {opacity: 1;}
+		}
+		@-webkit-keyframes blink {
+			0% {opacity: 1;}
+			50% {opacity: 0;}
+			100% {opacity: 1;}
+		}
+	}
+}
+
+#menu {
+	display: inline-block;
+
+	li {
+		display: inline-block;
+		margin-right: 3em;
+		margin-top: 1em;
+
+		.thickbordered(top);
+
+		a {padding: 1.6em 1em 1em 0;}
+	}
+}
+
+.hero-unit {
+	padding-top: 7.2em;
+	margin-top: 2.1em;
+	margin-right: -7.2em;
+
+	span {
+		font-size: 0.9em;
+	}
+
+	p {
+		font-size: 1.9em; line-height: 1.2em;
+	}
+}
+
+/* About
+-----------------------------------------------------------------------------------*/
+#about-box {
+	padding: 0.8em;
+}
+.about-box-container {
+	border: 0.6em solid #fff;
+}
+
+.active #about-box-content {
+	margin-top: 13.4em;
+}
+
+#about-box-content {
+	margin: 12.1em auto 3.8em auto;
+	width: 33.2em;
+	padding-left: 0.6em;
+	padding-right: 0.6em;
+}
+.close a {
+	font-size: 1.2em;
+	padding: 0.6em 1.2em 0.6em 0;
+	margin-bottom: 3.8em;
+}
+
+/* footer
+-----------------------------------------------------------------------------------*/
+#contact {
+
+	p {
+		font-size: 13px;
+	}
+}
+
+#footer {
+	font-size: 0.9em;
+	margin-bottom: -0.8em;
+}
+
+
+/* project list
+-----------------------------------------------------------------------------------*/
+#project-list {
+	margin: 6.4em -7.8em 0 -11.4em;
+}
+
+.project-list-item {
+	width: 32.666%;
+	margin: 0.333%;
+	padding-top: 19.5%;
+
+	img {
+		position: absolute;
+		top:0;
+		left: -21%;
+		height: 100%;
+	}
+}
+
+.project-list-item-title {
+	max-width: 60%;
+}
+
+
+/* Projects pages specific
+-----------------------------------------------------------------------------------*/
+#project-description {
+
+	p {
+		font-size: 1.6em;
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		margin-top: 0;
+		max-width: 31em;
+		letter-spacing: -0.02em;
+	}
+}
+
+#project-illustrations {
+	margin: 4em -6.9em;
+
+	.ill-container {
+		float: left;
+		width: 50%;
+
+		&.img2x {
+			width: 100%
+		}
+	}
+}
+
+@media screen and (max-width: 74em) {
+	body{padding: 2.1em 2.1em 1.2em 2.1em;}
+	.topbar, .bottombar {height: 1.2em;}
+	#main{ padding-left: 0; width: 56em;}
+	.hero-unit {margin-right: -6.4em; padding-top: 4.8em;}
+	.hero-unit p {font-size: 1.6em;}
+	#project-list {margin: 4.8em -6.4em 0 -6.4em;}
+	#project-illustrations {margin: 3.6em -6.1em;}
+	.project-list-item-title {font-size: 0.9em;}
+}
+
+@media screen and (max-width: 63.6em) {
+	body {padding: 2.1em 0 1.2em 0;}
+	#header {left: 1.9em; top: 1.9em;}
+	.hero-unit {margin:4.6em 0;}
+	#project-list {margin:3.6em -1.6em;}
+	.project-list-item {width: 49%; margin: 0.5%; padding-top: 25%}
+	.project-list-item-title {top: 1em; bottom: 1em; left: 1em; right: 1em;}
+	#project-illustrations {margin: 2.8em -2.1em;}
+	#menu, .close {font-size: 0.9em;}
+	.close a {margin-bottom: 2.1em; margin-top: 1em;}
+	#menu li:before, #menu li::before {padding-bottom: 1.2em;}
+	#colophon {margin-right: 2.1em;}
+	#contact {margin:6.4em 0;}
+	h1 {font-size: 2.9em;}
+	.back {margin-bottom: -3.6em;margin-top: 1.4em}
+}
+
+@media screen and (max-width: 63.6em) {
+	#title a {font-size: 1.6em;}
+}

@@ -29,7 +29,7 @@
 	<meta name="description" content="I'm Guillaume, a french Design Engineer specialised in digital interactions and products">
 	<meta name="author" content="Guillaume Mutschler">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/style.css">
 </head>
 
 <body <?php if (!$page){ echo'class="home"';} ?>> <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->

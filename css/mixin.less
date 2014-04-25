@@ -1,0 +1,17 @@
+
+.thickbordered(@position, @padding: 2em, @size: 1em) {
+
+	position: relative;
+	padding-@{position}: @padding;
+
+	&:before, &::before {
+		content: "";
+		width: 2.8em;
+		display: block;
+		height: 0.4em;
+		background: #000;
+		position: absolute;
+		font-size: @size;
+		@{position}: 0;
+	}
+}

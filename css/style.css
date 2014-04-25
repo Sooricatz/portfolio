@@ -34,7 +34,7 @@ a:hover {text-decoration: underline;}
 /* header
 -----------------------------------------------------------------------------------*/
 #header {margin: 0; position: fixed; top: 2.4em; left: 2.4em; z-index: 10000;}
-#title {display: inline-block; ; margin-right: 6em;}
+#title {display: inline-block; ; margin-right: 6em; zoom:1;}
 #title a {display: block; width: 10em; font-size: 2em; line-height: 1.1em; font-weight: bold; height: 4em; color: #000;}
 #title a:hover {text-decoration: none;}
 #title a:hover span {
@@ -108,7 +108,7 @@ a.project-list-item:hover h3 {color: #F1F1F1;}
 -----------------------------------------------------------------------------------*/
 .back {margin-bottom: -5.3em;}
 .back a {padding: 0.5em 1em 0.5em 0; display: inline-block; font-size: 1.1em;}
-.banner-img {text-align:center; line-height: 0; width: 92%; margin: 0 auto;} .banner-img img {max-width: 100%;} .banner-img .video-container {margin-bottom: 2em;}
+.banner-img {text-align:center; line-height: 0; width: 92%; margin: 0 auto;} .banner-img img {display:block; max-width: 100%;} .banner-img .video-container {margin-bottom: 2em;}
 #project-description {padding: 0.8em 0; border-bottom: 1px solid #E2E2E2; border-top: 1px solid #E2E2E2;}
 #project-description h2 {font-size: 0.9em; margin-bottom: 0; margin-top: 0;}
 #project-description p {font-size: 1.6em; font-family: Futura, "Trebuchet MS", Arial, sans-serif; margin-top: 0; max-width: 31em; letter-spacing: -0.02em;}
@@ -148,6 +148,7 @@ span.what {margin-right: 0.8em; font-size: 0.8em; display: inline-block; text-tr
 	#contact {margin:6.4em 0;}
 	h1 {font-size: 2.9em;}
 	.back {margin-bottom: -3.6em;margin-top: 1.4em}
+}
 
 @media screen and (max-width: 63.6em) {
 	#title a {font-size: 1.6em;}

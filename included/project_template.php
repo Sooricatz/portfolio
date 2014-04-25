@@ -39,9 +39,11 @@
         <?php
             if ($metadatas["what"]) {
                 $count = count($metadatas["what"]);
+                echo "<div class='what'>";
                 for ($i=0; $i < $count; $i++) {
-                    echo '<span class="what">#' .$metadatas["what"][$i] ."</span>";
+                    echo '<span>#' .$metadatas["what"][$i] ."</span>";
                 }
+                echo "</div>";
             }
         ?>
 </div>
