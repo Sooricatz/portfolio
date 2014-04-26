@@ -12,6 +12,36 @@
     };
     closedir($dir);
     arsort($dir_arr);
+
+    // Include and instantiate the class.
+    require_once 'Mobile_Detect.php';
+
+    global $detect;
+    global $isMobile;
+    global $isIpad;
+    global $isTablet;
+    global $isIE;
+
+    $detect   = new Mobile_Detect();
+    $isMobile = ( $detect->isMobile() ) ? true : false;
+    $isIpad   = ( $detect->isIpad() )   ? true : false;
+    $isTablet = ( $detect->isTablet() ) ? true : false;
+    $isIE     = ( $detect->isIE() )     ? true : false;
+
+
+
+    if ($isMobile) { 
+        
+        $bodyClass = "class='mobile";
+
+        if ($isIpad || $isTablet) { 
+            $bodyClass = $bodyClass .  " tablet";
+        } else {
+            $bodyClass = $bodyClass .  " phone";
+        }
+
+        $bodyClass = $bodyClass . "'";
+    }
 ?>
 
 <!doctype html>
@@ -29,17 +59,24 @@
 	<meta name="description" content="I'm Guillaume, a french Design Engineer specialised in digital interactions and products">
 	<meta name="author" content="Guillaume Mutschler">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/style.css">
+	
+    <?php if ( $detect->isMobile() ): ?>
+        <link rel="stylesheet" href="/mobile.css">
+    <?php else: ?>
+        <link rel="stylesheet" href="/style.css">
+    <?php endif; ?>
 </head>
 
-<body <?php if (!$page){ echo'class="home"';} ?>> <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<body <?php echo $bodyClass; ?>> <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div id="site">
     <div id="header">
         <div id="title"><a href="/">Guillaume Mutschler <br />Digital Product Designer<span>_</span></a></div>
 
         <div id="menu">
-            <li><a href="mailto:guillaume.mutschler@gmail.com" target="_blank">guillaume.mutschler@gmail.com</a></li>
-            <li><a href="#" class="toggle-about">About Me</a></li>
+            <ul>
+                <li><a href="mailto:guillaume.mutschler@gmail.com" target="_blank">guillaume.mutschler@gmail.com</a></li>
+                <li><a href="#" class="toggle-about">About Me</a></li>
+            </ul>
         </div>
     </div>
 

@@ -18,7 +18,7 @@ body {padding: 2.4em; font-size: 14px;}
 -----------------------------------------------------------------------------------*/
 h1 {margin: 1em 0; font-size: 4.8em;}
 h2 {margin-bottom: 0; margin-top: 1em; font-size: 1.2em;}
-h3 {font-size: 1.2em; color: #000; margin-top: 0.4em; margin-bottom: 0; font-weight: normal; font-weight: bold;}
+h3 {font-size: 1.2em; margin-top: 0.4em; margin-bottom: 0;}
 
 p {margin-bottom: 0.4em; margin-top: 0.4em; line-height: 1.4em;}
 a:hover {text-decoration: underline;}
@@ -47,6 +47,7 @@ a:hover {text-decoration: underline;}
 #title {
 	display: inline-block;
 	margin-right: 3em;
+	margin-bottom: 0.4em;
 	font-size: 2em;
 
 	a:hover {
@@ -73,6 +74,7 @@ a:hover {text-decoration: underline;}
 
 #menu {
 	display: inline-block;
+	margin-top: 1.6em;
 
 	li {
 		display: inline-block;
@@ -133,6 +135,10 @@ a:hover {text-decoration: underline;}
 	}
 }
 
+a.contact-email {
+	font-size: 1.4em;
+}
+
 #footer {
 	font-size: 0.9em;
 	margin-bottom: -0.8em;
@@ -156,15 +162,38 @@ a:hover {text-decoration: underline;}
 		left: -21%;
 		height: 100%;
 	}
-}
 
-.project-list-item-title {
-	max-width: 60%;
-}
+	h3 {
+		line-height: 1.1em;
+	}
 
+	&:hover {
+
+		h3 {color: #F1F1F1;}
+
+		.project-list-item-title {
+			background: #000;
+			background: rgba(0,0,0,0.95);
+			color: #F1F1F1;
+		}
+
+		.project-list-item-title-inner {
+			border: 1px solid #D1D1D1;
+		}
+	}
+}
 
 /* Projects pages specific
 -----------------------------------------------------------------------------------*/
+.banner-img {
+	width: 92%;
+	margin: 0 auto;
+
+	.video-container {
+		margin-bottom: 2em;
+	}
+}
+
 #project-description {
 
 	p {
@@ -182,6 +211,7 @@ a:hover {text-decoration: underline;}
 	.ill-container {
 		float: left;
 		width: 50%;
+		padding: 0.4em 0.5em;
 
 		&.img2x {
 			width: 100%
@@ -191,32 +221,56 @@ a:hover {text-decoration: underline;}
 
 @media screen and (max-width: 74em) {
 	body{padding: 2.1em 2.1em 1.2em 2.1em;}
-	.topbar, .bottombar {height: 1.2em;}
-	#main{ padding-left: 0; width: 56em;}
-	.hero-unit {margin-right: -6.4em; padding-top: 4.8em;}
-	.hero-unit p {font-size: 1.6em;}
-	#project-list {margin: 4.8em -6.4em 0 -6.4em;}
-	#project-illustrations {margin: 3.6em -6.1em;}
-	.project-list-item-title {font-size: 0.9em;}
+	#main{padding-left: 0; width: 56em;}
+	
+	.hero-unit {
+		margin-right: -6.4em;
+		padding-top: 4.8em;
+
+		p {
+			font-size: 1.6em;
+		}
+	}
+
+	#project-list {
+		margin: 4.8em -6.4em 0 -6.4em;
+	}
+	#project-illustrations {
+		margin: 3.6em -6.1em;
+	}
+	.project-list-item-title {
+		font-size: 0.9em;
+	}
 }
 
 @media screen and (max-width: 63.6em) {
 	body {padding: 2.1em 0 1.2em 0;}
-	#header {left: 1.9em; top: 1.9em;}
-	.hero-unit {margin:4.6em 0;}
-	#project-list {margin:3.6em -1.6em;}
-	.project-list-item {width: 49%; margin: 0.5%; padding-top: 25%}
-	.project-list-item-title {top: 1em; bottom: 1em; left: 1em; right: 1em;}
-	#project-illustrations {margin: 2.8em -2.1em;}
+
+	#header {left: 1.9em; top: 1.6em;}
+	#title {font-size: 1.6em;}
+	
+	.hero-unit {
+		padding-top: 3.6em;
+		margin-top: 5.6em;
+		margin-right: 0;
+	}
+
+	#project-list {
+		margin:3.6em -1.6em;
+	}
+	.project-list-item {
+		width: 49%;
+		margin: 0.5%;
+		padding-top: 25%;
+	}
+
+	#project-illustrations {
+		margin: 2.8em -2.1em;
+	}
 	#menu, .close {font-size: 0.9em;}
 	.close a {margin-bottom: 2.1em; margin-top: 1em;}
-	#menu li:before, #menu li::before {padding-bottom: 1.2em;}
 	#colophon {margin-right: 2.1em;}
 	#contact {margin:6.4em 0;}
 	h1 {font-size: 2.9em;}
 	.back {margin-bottom: -3.6em;margin-top: 1.4em}
-}
-
-@media screen and (max-width: 63.6em) {
-	#title a {font-size: 1.6em;}
 }

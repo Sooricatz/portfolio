@@ -18,14 +18,14 @@ html.inactive, html.inactive body {overflow: hidden;}
 h1, h2, h3, #title {font-family: Futura, "Trebuchet MS", Arial, sans-serif;}
 h1 {color: #000; letter-spacing: -0.02em;}
 h2 {text-transform: uppercase; color: #04BD93; font-weight: bold;}
-h3 {font-size: 1.2em; color: #000; margin-top: 0.4em; margin-bottom: 0; font-weight: normal; font-weight: bold;}
+h3 {color: #000; font-weight: bold;}
 
 p a {text-decoration: underline;}
 
 
 /* header
 -----------------------------------------------------------------------------------*/
-#title a {display: block; width: 10em; line-height: 1.1em; font-weight: bold; color: #000;}
+#title a {display: block; width: 11em; line-height: 1.1em; font-weight: bold; color: #000;}
 
 .hero-unit { border-top: 1px solid #E2E2E2; border-bottom: 1px solid #E2E2E2;}
 .hero-unit span {margin-bottom: 0; text-transform: uppercase; color: #04BD93; font-weight: bold;}
@@ -100,7 +100,6 @@ p a {text-decoration: underline;}
 	}
 
 	a.contact-email {
-		font-size: 1.4em;
 		margin-top: 1.6em;
 		display: block;
 
@@ -129,21 +128,6 @@ p a {text-decoration: underline;}
 	line-height: 0;
 	-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-
-	&:hover {
-
-		h3 {color: #F1F1F1;}
-
-		.project-list-item-title {
-			background: #000;
-			background: rgba(0,0,0,0.95);
-			color: #F1F1F1;
-		}
-
-		.project-list-item-title-inner {
-			border: 1px solid #D1D1D1;
-		}
-	}
 }
 
 .project-list-item-title {
@@ -154,6 +138,7 @@ p a {text-decoration: underline;}
 	padding: 0.6em;
 	-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+	max-width: 16em;
 }
 
 
@@ -166,10 +151,6 @@ p a {text-decoration: underline;}
 	width: 100%;
 	text-transform: uppercase;
 	letter-spacing: -0.04em;
-
-	h3 {
-		line-height: 1.1em;
-	}
 }
 
 
@@ -178,15 +159,9 @@ p a {text-decoration: underline;}
 .banner-img {
 	text-align:center;
 	line-height: 0;
-	width: 92%;
-	margin: 0 auto;
 
 	img { display: block;
 		max-width: 100%;
-	}
-
-	.video-container {
-		margin-bottom: 2em;
 	}
 }
 
@@ -200,19 +175,22 @@ p a {text-decoration: underline;}
 		margin-bottom: 0;
 		margin-top: 0;
 	}
+
+	p {
+		margin-top: 0;
+		max-width: 31em;
+	}
 }
 
 .what span {
 	margin-right: 0.8em;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	display: inline-block;
 	text-transform: uppercase;
 	font-family: Times, "Times New Roman", serif;
 }
 
 .ill-container {
-	padding: 0.4em 0.5em;
-
 	img {
 		-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 		box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
