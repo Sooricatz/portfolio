@@ -20,13 +20,15 @@
 </div> 
 
 <div id="about-box">
-    <div class="about-box-container">
-    <div id="about-box-content">
-        <div class="close"><a href="#" class="toggle-about">&#9747 Close</a></div>
-        <p>Graduate from a French <a href="http://en.wikipedia.org/wiki/Grande_ecole">Grande Ecole</a> in Mechanical Engineering and Design with majors in Ergonomic and Human Computer Interactions, I provide intuitive product definition and execution with emphasis on the technical and functional, while taking in account ergonomics, cognition as well as industry and societal constraints.</p>
-        <p>I had the the opportunity and chance to work either for big corporations and smaller ventures. It teaches me how to be flexible in a teamwork situation and that compromises and decisions making are definitive an added values.</p>
-        <p>You can learn more about my experiences on my <a href="http://www.linkedin.com/profile/view?id=43708188">Linkedin profile</a>.</p>
-    </div>
+    <div class="about-box-container">  
+        <div class="about-box-inner">
+            <div id="about-box-content">
+                <div class="close"><a href="#" class="toggle-about">&#9747 Close</a></div>
+                <p>Graduate from a French <a href="http://en.wikipedia.org/wiki/Grande_ecole">Grande Ecole</a> in Mechanical Engineering and Design with majors in Ergonomic and Human Computer Interactions, I provide intuitive product definition and execution with emphasis on the technical and functional, while taking in account ergonomics, cognition as well as industry and societal constraints.</p>
+                <p>I had the the opportunity and chance to work either for big corporations and smaller ventures. It teaches me how to be flexible in a teamwork situation and that compromises and decisions making are definitive an added values.</p>
+                <p>You can learn more about my experiences on my <a href="http://www.linkedin.com/profile/view?id=43708188">Linkedin profile</a>.</p>
+            </div>
+        </div>
     </div> 
 </div>
 
@@ -37,8 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
     [].forEach.call(document.getElementsByClassName('toggle-about'), function(el) {
         el.addEventListener('click',function(e) {
             e.preventDefault();
-            document.getElementById('about-box').classList.toggle("active");
             document.documentElement.classList.toggle("inactive");
+            document.getElementById('about-box').classList.toggle("active");
         })
     })
 })
