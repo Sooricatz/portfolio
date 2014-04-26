@@ -21,7 +21,7 @@
                 <img src="<?=$bannerimg ?>" />
             <?php elseif (file_exists($bannervid)):
                 $ex_media = file_get_contents($bannervid); ?>
-                <div class="video-container"><?=$ex_media ?></div>';
+                <div class="video-container"><?=$ex_media ?></div>
             <?php endif ?>
         </div>
     <?php endif ?>
