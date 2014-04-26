@@ -5,7 +5,7 @@
     include ($path . "/included/head.php");
     include_once $path . '/included/project_meta.php';
     $metadatas = getprojectmeta($path.$_SERVER['REQUEST_URI']);
-    $bannerimg = "images/banner.png";
+    $bannerimg = "images/banner.jpg";
     $bannervid = "images/banner.txt";
     $descriptionfile = "description.md";
 ?>
@@ -39,41 +39,45 @@
         <?php
             if ($metadatas["what"]) {
                 $count = count($metadatas["what"]);
+                echo "<div class='what'>";
                 for ($i=0; $i < $count; $i++) {
-                    echo '<span class="what">#' .$metadatas["what"][$i] ."</span>";
+                    echo '<span>#' .$metadatas["what"][$i] ."</span>";
                 }
+                echo "</div>";
             }
         ?>
 </div>
 
+<?php $dirname = "images/illustrations/";
+	if (file_exists($dirname)): ?>
 <div id="project-illustrations">
-        <?php   
-            $dirname = "images/illustrations/";
-            $images = scandir($dirname);
-            $ignore = Array(".", "..","Thumbs.db",".localized",".DS_Store",);
-            foreach($images as $node){
-            $mac_hidden = strpos($node, '._');
-            if(!in_array($node, $ignore) && $mac_hidden !== 0) {
-                
-                echo "<div class='ill-container";
-                if (strpos($node, '_2X') OR strpos($node, '.txt')) {
-                    echo " img2x";
-                };
-                echo "'/>";
+	<?php 
+           $images = scandir($dirname);
+           $ignore = Array(".", "..","Thumbs.db",".localized",".DS_Store",);
+           foreach($images as $node){
+           $mac_hidden = strpos($node, '._');
+           if(!in_array($node, $ignore) && $mac_hidden !== 0) {
+               
+               echo "<div class='ill-container";
+               if (strpos($node, '_2X') OR strpos($node, '.txt')) {
+                   echo " img2x";
+               };
+               echo "'/>";
 
-                if (strpos($node, '.jpg') OR strpos($node, '.png')) {
-                    echo "<img src='images/illustrations/" . $node . "'/>";
-                } elseif (strpos($node, '.txt')){
-                    $media_path = "images/illustrations/" .$node;
-                    $ex_media = file_get_contents($media_path);
-                    echo '<div class="video-container">' .$ex_media .'</div>';
-                };
+               if (strpos($node, '.jpg') OR strpos($node, '.png')) {
+                   echo "<img src='images/illustrations/" . $node . "'/>";
+               } elseif (strpos($node, '.txt')){
+                   $media_path = "images/illustrations/" .$node;
+                   $ex_media = file_get_contents($media_path);
+                   echo '<div class="video-container">' .$ex_media .'</div>';
+               };
 
-                echo "</div>";
-            };
-            }     
-        ?>
+               echo "</div>";
+           };
+           }     
+       ?>
     <div class="clear"></div>
 </div>
+<?php endif; ?>
     
 <?php include ($path . "/included/footer.php"); ?>

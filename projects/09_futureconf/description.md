@@ -1,1 +1,1 @@
-Webdesign and Front-End Development for the Cape-town based conferences organizer, Future Conferences
+Webdesign and Front-End Development for a Cape Town based conferences organizer.

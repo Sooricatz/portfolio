@@ -1,0 +1,197 @@
+
+@import "common";
+
+
+/* Structure Général
+-----------------------------------------------------------------------------------*/
+body {font-size: 14px;}
+#main, #title, #footer {margin: 0.8em;}
+
+
+/* Mise en forme General
+-----------------------------------------------------------------------------------*/
+h1 { font-size: 1.4em;}
+h2 {font-size: 1.2em;}
+h3 {font-size: 1em;}
+
+p {line-height: 1.2em; margin-bottom: 0.4em; margin-top: 0.4em; }
+
+.back {
+	margin-top: 2.6em;
+
+	a {
+		padding: 0.8em 1em 0.8em 0;
+		display: inline-block;
+
+		.thickbordered(top, 1em, .9em);
+	}
+}
+
+
+
+/* header
+-----------------------------------------------------------------------------------*/
+#title a {
+	padding-bottom: 1em;
+	font-size: 1.4em;
+}
+
+#menu {
+	border-top: 1px solid #E2E2E2;
+
+	ul {
+		margin: 0 0.8em;
+		display: block;
+	}
+	
+	li {
+		margin-top: -5px;
+		display: inline-block;
+		margin-right: 1.8em;
+
+		.thickbordered(top, 0, 12px);
+
+		a {
+			font-size: 0.85em;
+			display: block;
+			padding: 1.8em 1em 1.8em 0;
+		}
+	}
+}
+
+.hero-unit {
+	padding: 0.4em 0;
+	margin: 1.6em auto;
+	max-width: 32em;
+
+	span {
+		font-size: 0.9em;
+	}
+}
+
+.project-list-item-title {
+	line-height: 1em;
+	max-width: 14em;
+	min-width: 10em;
+}
+
+/* About
+-----------------------------------------------------------------------------------*/
+.about-box-container {
+	padding: 1em;
+}
+
+
+#about-box-content {
+	margin: 16% auto 0 auto;
+	max-width: 33.2em;
+}
+.close a {
+	font-size: 1.2em;
+	padding: 0.6em 1.2em 0.6em 0;
+	margin-bottom: 2.1em;
+}
+
+/* footer
+-----------------------------------------------------------------------------------*/
+a.contact-email {
+	font-size: 1.2em;
+}
+
+#footer {
+	font-size: 0.85em;
+}
+
+/* Projects pages specific
+-----------------------------------------------------------------------------------*/
+.banner-img .video-container {
+	margin-bottom: 0.8em;
+}
+
+/* tablet specific
+-----------------------------------------------------------------------------------*/
+body.tablet {
+
+	.project-list-item {
+		width: 49%;
+		margin: 0.5%;
+		padding-top: 25%;
+
+		img {
+			position: absolute;
+			top:0;
+			left: -21%;
+			height: 100%;
+		}
+	}
+
+	#project-illustrations, #project-list {
+		margin: 1em -.7em;
+	}
+
+	.ill-container {
+		float: left;
+		width: 50%;
+		padding: .4em;
+
+		&.img2x {
+			width: 100%
+		}
+	}
+}
+
+/* phone specific
+-----------------------------------------------------------------------------------*/
+body.phone {
+
+	.project-list-item {
+		width: 100%;
+		margin: .3em 0;
+		padding-top: 40%;
+
+		img {
+			position: absolute;
+			top:0;
+			left: 0;
+			width: 100%;
+		}
+	}
+
+	#project-illustrations, #project-list {
+		margin: 1em -.4em;
+	}
+
+	.ill-container {
+		margin: .3em 0;
+	}
+}
+
+@media only screen and (orientation: portrait) {
+		body.phone .active #about-box-content {
+		margin-top: 20%;
+	}
+
+	body.tablet .active #about-box-content {
+		margin-top: 25%;
+	}
+}
+
+@media only screen and (orientation: landscape) {
+	#about-box-content {
+		margin-top: 5%;
+	}
+
+	.active #about-box-content {
+		margin-top: 12%;
+	}
+}
+
+@media only screen and (orientation: landscape) and (max-height:26em) {
+	body.tablet #about-box-content, body.phone #about-box-content {
+		margin: 1em auto;
+	}
+
+	body.tablet .active #about-box-content, body.phone .active #about-box-content {
+		margin: 1.8em auto;
+	}
+}

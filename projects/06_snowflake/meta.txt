@@ -1,4 +1,4 @@
 PROJECT NAME, NDS Snowflake
-DATE,  2010-2011
+DATE,  2010-2012
 STATUS, 1
 WHAT,Product Management,Interface Design,UX Design, Branding
