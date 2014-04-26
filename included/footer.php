@@ -3,7 +3,7 @@
         <div class="contact-inner">
             <h2>Get in touch</h2>
     		<p>I'm always thrilled to meet new people, motivated by crafting better products together.</p>
-            <p>Keep me posted, if sounds like a fit.</p>
+            <p>Keep me posted, if it sounds like a fit.</p>
             <a href="mailto:guillaume.mutschler@gmail.com" target="_blank" class="contact-email">guillaume.mutschler@gmail.com</a>
         </div>
     </div>
